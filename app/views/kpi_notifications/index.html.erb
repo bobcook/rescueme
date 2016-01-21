@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Kpi Notifications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Value</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kpi_notifications.each do |kpi_notification| %>
+      <tr>
+        <td><%= kpi_notification.title %></td>
+        <td><%= kpi_notification.value %></td>
+        <td><%= kpi_notification.description %></td>
+        <td><%= link_to 'Show', kpi_notification %></td>
+        <td><%= link_to 'Edit', edit_kpi_notification_path(kpi_notification) %></td>
+        <td><%= link_to 'Destroy', kpi_notification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kpi notification', new_kpi_notification_path %>
