@@ -1,24 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Subject:</strong>
-  <%= @community_message.subject %>
-</p>
+  <p>
+    <strong>Subject:</strong>
+    <%= @community_message.subject %>
+  </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @community_message.body %>
-</p>
+  <p>
+    <strong>Body:</strong>
+    <%= @community_message.body %>
+  </p>
 
-<p>
-  <strong>Start date:</strong>
-  <%= @community_message.start_date %>
-</p>
+  <p>
+    <strong>Start date:</strong>
+    <%= @community_message.start_date %>
+  </p>
 
-<p>
-  <strong>End date:</strong>
-  <%= @community_message.end_date %>
-</p>
+  <p>
+    <strong>End date:</strong>
+    <%= @community_message.end_date %>
+  </p>
 
-<%= link_to 'Edit', edit_community_message_path(@community_message) %> |
-<%= link_to 'Back', community_messages_path %>
+  <%= link_to 'Edit', edit_community_message_path(@community_message), :class => 'btn btn-sm btn-primary' %> |
+  <%= link_to 'Back', community_messages_path, :class => 'btn btn-sm btn-primary' %>
+</div>

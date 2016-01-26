@@ -22,10 +22,11 @@ gem 'pg'
 gem 'puma'
 group :development do
   gem 'better_errors'
-  gem 'hub', :require=>nil
+  gem 'hub', require: nil
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
+  gem 'pry-rails'
 end
 group :development, :test do
   gem 'factory_girl_rails'

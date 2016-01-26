@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @kpi_notification.title %>
-</p>
+  <p>
+    <strong>Title:</strong>
+    <%= @kpi_notification.title %>
+  </p>
 
-<p>
-  <strong>Value:</strong>
-  <%= @kpi_notification.value %>
-</p>
+  <p>
+    <strong>Value:</strong>
+    <%= @kpi_notification.value %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @kpi_notification.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @kpi_notification.description %>
+  </p>
 
-<%= link_to 'Edit', edit_kpi_notification_path(@kpi_notification) %> |
-<%= link_to 'Back', kpi_notifications_path %>
+  <%= link_to 'Edit', edit_kpi_notification_path(@kpi_notification), :class => 'btn btn-sm btn-primary' %> |
+  <%= link_to 'Back', kpi_notifications_path, :class => 'btn btn-sm btn-primary' %>
+</div>

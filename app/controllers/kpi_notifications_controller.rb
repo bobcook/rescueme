@@ -62,6 +62,7 @@ class KpiNotificationsController < ApplicationController
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_kpi_notification
       @kpi_notification = KpiNotification.find(params[:id])
