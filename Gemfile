@@ -32,6 +32,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
+  gem 'bundler-audit', require: false
 end
 group :production do
   gem 'rails_12factor'
